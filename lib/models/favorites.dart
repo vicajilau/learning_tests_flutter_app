@@ -6,11 +6,13 @@ class Favorites extends ChangeNotifier {
 
   List<int> get items => _favoriteItems;
 
+  /// Add a new [itemNo] as favorite into list of favorites.Then notify listeners.
   void add(int itemNo) {
     _favoriteItems.add(itemNo);
     notifyListeners();
   }
 
+  /// Remove [itemNo] from list of favorites.Then notify listeners.
   void remove(int itemNo) {
     _favoriteItems.remove(itemNo);
     notifyListeners();

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
 import 'package:testing_app/models/favorites.dart';
-import 'package:testing_app/screens/favorites_page.dart';
+import 'package:testing_app/screens/favorites/favorites_page.dart';
 
 late Favorites favoritesList;
 

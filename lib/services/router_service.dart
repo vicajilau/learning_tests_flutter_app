@@ -1,7 +1,7 @@
 import 'package:go_router/go_router.dart';
 
-import '../screens/favorites_page.dart';
-import '../screens/home_page.dart';
+import '../screens/favorites/favorites_page.dart';
+import '../screens/home/home_page.dart';
 
 class RouterService {
   static RouterService shared = RouterService();

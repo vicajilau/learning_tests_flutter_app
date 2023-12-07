@@ -1,43 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
-import '../models/favorites.dart';
-import 'favorites_page.dart';
 
-class HomePage extends StatelessWidget {
-  static String routeName = '/';
+import '../../models/favorites.dart';
 
-  const HomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Testing Sample'),
-        actions: <Widget>[
-          TextButton.icon(
-            onPressed: () {
-              context.go('/${FavoritesPage.routeName}');
-            },
-            icon: const Icon(Icons.favorite_border),
-            label: const Text('Favorites'),
-          ),
-        ],
-      ),
-      body: ListView.builder(
-        itemCount: 100,
-        cacheExtent: 20.0,
-        padding: const EdgeInsets.symmetric(vertical: 16),
-        itemBuilder: (context, index) => ItemTile(index),
-      ),
-    );
-  }
-}
-
-class ItemTile extends StatelessWidget {
+class HomeItemTile extends StatelessWidget {
   final int itemNo;
 
-  const ItemTile(this.itemNo, {super.key});
+  const HomeItemTile(this.itemNo, {super.key});
 
   @override
   Widget build(BuildContext context) {
