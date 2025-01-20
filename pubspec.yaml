@@ -52,7 +52,7 @@ dev_dependencies:
     sdk: flutter
   test: ^1.25.8
 
-  flutter_launcher_icons: ^0.14.2
+  flutter_launcher_icons: ^0.14.3
 
 flutter_launcher_icons:
   android: true
